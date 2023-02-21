@@ -1,0 +1,14 @@
+r-readr
+r-dplyr
+r-dbplyr
+r-stringr
+r-DBI
+r-RSQLite
+r-assertthat
+r-optparse
+r-magrittr
+r-fuzzyjoin
+r-vctrs>=0.5.*
+r-fuzzyjoin
+r-curl
+pip
