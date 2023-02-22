@@ -1,5 +1,11 @@
 # massSpecker: find targets/suspects in peaklist
 
+### 0. Download Repository
+
+```bash
+$ git clone https://github.com/speckerf/massSpecker.git
+```
+
 ### 1. Create Environment
 
 First, we create and activate an environment in conda. Run the following commands:
@@ -61,7 +67,7 @@ First, we publish the compound database to Datasette:
 $ datasette -p 8080 data/database.db 
 ```
 
-Then, we can directly access the data from _datasette_ by setting the compound argument to the corresponding API call in the second version of the script (_find_targets_v2.R_):
+Open a second terminal window, navigate into the massSpecker folder and activate the conda environment. Then, we can directly access the data from _datasette_ by setting the compound argument to the corresponding API call in the second version of the script (_find_targets_v2.R_):
 
 ```bash
 $ Rscript code/find_targets_v2.R --peaklist data/peaklist.csv --compoundlist 'http://localhost:8080/database/compoundlist.csv?_size=max'
